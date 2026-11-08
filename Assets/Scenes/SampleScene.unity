@@ -16032,15 +16032,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.319321
+      value: -6.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.75
+      value: 3.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.19
+      value: 3.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16070,6 +16070,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ff67de1ba8d9554793315fd012d5343, type: 2}
     - target: {fileID: 919132149155446097, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
       propertyPath: m_Name
       value: HierarchyWindTree
@@ -16077,8 +16081,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1100838749}
   m_SourcePrefab: {fileID: 100100000, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
+--- !u!1 &1100838748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7db8c69db6055684c9ab769668584e20, type: 3}
+  m_PrefabInstance: {fileID: 1100838747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1100838749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100838748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850be1059185ee94d8505f9ac4ffd5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VegetationController
+  BendValue:
+    frequency: 1
+    dampingratio: 0.5
+  BendFrequency: 1
+  BendDampingRatio: 0.5
+  mat: {fileID: 2100000, guid: 0ff67de1ba8d9554793315fd012d5343, type: 2}
 --- !u!1 &1118045912
 GameObject:
   m_ObjectHideFlags: 0
@@ -21465,7 +21495,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 50
     distanceFadeEnd: 60
-    textureOffset: {x: -0, y: -70.29002, z: -0}
+    textureOffset: {x: -0, y: -964.65607, z: -0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
@@ -25939,9 +25969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindPrototype.WindManager
   windDirection: {x: 1, y: 0, z: 0}
-  windStrength: 1
-  springForce: 60
-  springDamp: 5
+  windStrength: 1.47
 --- !u!1 &1693144975
 GameObject:
   m_ObjectHideFlags: 0

@@ -93,7 +93,7 @@ float3 TreeWind(
     float TrunkMaxAngleDegrees, float BranchMaxAngleDegrees)
 {
     float3 bentPositionOS, unusedNormalOS;
-    float3 directionOS = mul((float3x3)unity_WorldToObject, DirectionWS);
+    float3 directionOS = mul((float3x3)UNITY_MATRIX_I_M, DirectionWS);
     TreeWindEvaluate(PositionOS, float3(0, 1, 0), directionOS, Strength,
         float3(0, 0, 0), TrunkHeight, PivotOS, BranchWeight,
         TrunkMaxAngleDegrees, BranchMaxAngleDegrees, bentPositionOS, unusedNormalOS);
